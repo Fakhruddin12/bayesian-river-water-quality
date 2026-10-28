@@ -1,6 +1,6 @@
 # Understanding How River Pollution Changes
 
-**Can water measurements distinguish pollution from direct discharges from pollution washed into a river by runoff—and show how those contributions change over time?**
+**How do direct discharges and rain-driven runoff contribute to river pollution, and how do those contributions change over time?**
 
 This MSc dissertation combines river-flow data with **16,233 pollutant readings from six sites**. It estimates two source components: direct or point-source discharges, whose concentrations tend to dilute as flow rises, and diffuse runoff, whose contribution can increase with flow. The measurements do not directly label either source, so the decomposition depends on an explicit statistical model.
 
