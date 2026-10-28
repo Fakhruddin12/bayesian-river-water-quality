@@ -1,0 +1,9 @@
+pollutant,model,mean_test_nll,mean_test_mae_log10,mean_test_rmse_log10
+Ammonia,Static Bayesian,1.305,0.920,1.031
+Ammonia,Time-varying Bayesian,1.362,1.288,1.422
+Nitrate,Static Bayesian,-0.836,0.077,0.101
+Nitrate,Time-varying Bayesian,-0.845,0.083,0.103
+Orthophosphate,Static Bayesian,0.693,0.314,0.352
+Orthophosphate,Time-varying Bayesian,0.293,0.244,0.282
+Dissolved zinc,Static Bayesian,0.200,0.208,0.236
+Dissolved zinc,Time-varying Bayesian,-0.400,0.126,0.164
