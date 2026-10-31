@@ -1,6 +1,6 @@
 # Understanding How River Pollution Changes
 
-[**Project report (PDF)**](reports/PROJECT_REPORT.pdf) · [**Research decision and evidence limits**](docs/RESEARCH_DECISION.md)
+[**Original MSc dissertation (PDF)**](reports/dissertation.pdf) · [**Research decision and evidence limits**](docs/RESEARCH_DECISION.md)
 
 Reported zinc log10-RMSE is 0.164 versus static Bayesian 0.236 and best GAM 0.180 (8.9% below that stronger control). Orthophosphate is 0.282 versus static Bayesian 0.352 but worse than GAM 0.200. Dynamic ammonia also worsens. These are dissertation findings, not new fitted results.
 
@@ -57,3 +57,7 @@ By default this checks final-model input availability, including a manifest hash
 
 **Author:** Fakhruddin Hakim Hussain · MSc Statistics with Data Science, University of Edinburgh · [Portfolio](https://github.com/Fakhruddin12)
 
+
+## Report used for LinkedIn
+
+The original submitted [dissertation](reports/dissertation.pdf) is the primary project PDF. The separate [portfolio review summary](reports/PROJECT_REVIEW_SUMMARY.pdf) records later checks and limitations. The stable `reports/PROJECT_REPORT.pdf` link now resolves to the original dissertation.

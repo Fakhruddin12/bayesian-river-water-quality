@@ -24,9 +24,9 @@ https://github.com/Fakhruddin12/bayesian-river-water-quality
 MSc Statistics with Data Science, University of Edinburgh. The dissertation confirms this association. Use the actual project start/end dates from your records; do not use the report assembly date as a project date.
 
 ## Media attachment
-- File: Bayesian_River_Project_Report.pdf
-- Title: Bayesian River Water Quality — Methods, Results and Uncertainty
-- Description: Research report on censoring-aware daily aggregation, nonlinear source models, hierarchical pooling, temporal change and model comparison. Includes all four pollutants, classical/GAM controls, prior sensitivity, source-identification limits and reproduction status.
+- File: Bayesian_River_Dissertation.pdf
+- Title: Original MSc Dissertation
+- Description: Original submitted dissertation, including the study methodology, results, discussion and references. Later portfolio verification is documented separately in the repository.
 
 ## Evidence notes — not part of the pasted description
 - Source version: 2b8b7b0137bd67def35f9b2db3b56309b181aa0d.
@@ -42,9 +42,12 @@ MSc Statistics with Data Science, University of Edinburgh. The dissertation conf
 - Source shares are model-dependent components, not directly identified discharges or causal intervention effects.
 
 ## Public report link
-https://github.com/Fakhruddin12/bayesian-river-water-quality/blob/master/reports/PROJECT_REPORT.pdf
+https://github.com/Fakhruddin12/bayesian-river-water-quality/blob/master/reports/dissertation.pdf
 
 ## October review clarification — evidence note
 Reported zinc log10-RMSE is 0.164 versus static Bayesian 0.236 and best GAM 0.180 (8.9% below that stronger control). Orthophosphate is 0.282 versus static Bayesian 0.352 but worse than GAM 0.200. Dynamic ammonia also worsens. These are dissertation findings, not new fitted results.
 
 The final code, frozen split and fit artifacts are missing; public R scripts are earlier per-site revisions. Source shares are model-dependent flow components, not measured physical discharges. Prior-scale and residual-scale details and a common calendar cutoff remain unresolved.
+
+## Media decision — 1 November 2026
+Use the original dissertation PDF as LinkedIn media. The separate portfolio review summary is supporting audit material, not the attachment. Later replay checks must not be presented as if they appear in the submitted dissertation.
