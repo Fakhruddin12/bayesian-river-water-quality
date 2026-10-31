@@ -1,5 +1,11 @@
 # Understanding How River Pollution Changes
 
+[**Project report (PDF)**](reports/PROJECT_REPORT.pdf) · [**Research decision and evidence limits**](docs/RESEARCH_DECISION.md)
+
+Reported zinc log10-RMSE is 0.164 versus static Bayesian 0.236 and best GAM 0.180 (8.9% below that stronger control). Orthophosphate is 0.282 versus static Bayesian 0.352 but worse than GAM 0.200. Dynamic ammonia also worsens. These are dissertation findings, not new fitted results.
+
+**Research decision:** Restore the exact final hierarchical workflow before extending the model or claiming numerical reproduction.
+
 **How do direct discharges and rain-driven runoff contribute to river pollution, and how do those contributions change over time?**
 
 This MSc dissertation combines river-flow data with **16,233 pollutant readings from six sites**. It estimates two source components: direct or point-source discharges, whose concentrations tend to dilute as flow rises, and diffuse runoff, whose contribution can increase with flow. The measurements do not directly label either source, so the decomposition depends on an explicit statistical model.
@@ -47,6 +53,7 @@ The dissertation and five archived R scripts are available. The scripts are earl
 python scripts/check_inputs.py
 ```
 
-This preflight check lists the inputs that must be restored. [Exact missing files and model-version distinction](REPRODUCIBILITY.md) · [Archived analysis scripts](analysis/).
+By default this checks final-model input availability, including a manifest hashing the frozen split and final code. `--scope archived` checks only the archived split file. Neither scope runs a model or verifies convergence. Three regression tests cover the distinction. [Exact missing files and model-version distinction](REPRODUCIBILITY.md) · [Archived analysis scripts](analysis/).
 
 **Author:** Fakhruddin Hakim Hussain · MSc Statistics with Data Science, University of Edinburgh · [Portfolio](https://github.com/Fakhruddin12)
+

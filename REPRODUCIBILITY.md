@@ -30,3 +30,18 @@ python scripts/check_inputs.py
 ```
 
 The preflight check lists available and missing inputs. For the archived analysis, install tidyverse, lubridate, mgcv, brms and posterior plus a Stan-capable C++ toolchain, then run scripts in numeric order from the repository root after restoring their inputs. Bayesian fitting can be expensive. The presence of code is not a blanket convergence claim.
+
+## Scope-aware preflight (October 2026)
+
+`python scripts/check_inputs.py` defaults to `--scope final`. It requires the frozen `data/processed/model_data_split.rds` and `artifacts/final_reproduction.json`. The latter is a new restoration/audit convention, not a recovered original file. Restore the actual final code and record:
+
+```json
+{
+  "frozen_split": {"path": "data/processed/model_data_split.rds", "sha256": "<actual SHA-256>"},
+  "final_model_code": {"path": "analysis/<restored-final-code>.R", "sha256": "<actual SHA-256>"}
+}
+```
+
+Paths must remain within the repository. Changed files fail the hash check. These files are currently missing; no manifest with invented hashes is provided. A successful check establishes file availability and hash agreement only. It neither verifies that the restored code is the correct final model nor runs fits, metrics or convergence diagnostics. Include any imported dependencies and the final posterior/predictive artifacts in the full restoration audit.
+
+`python scripts/check_inputs.py --scope archived` checks only that the archived workflow's split file exists; it does not claim all preprocessing imports or R dependencies are present. Install pytest separately and run `python -m pytest -q tests` for the three small preflight regressions.
